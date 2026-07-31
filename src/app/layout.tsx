@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Sora } from "next/font/google";
+import { Inter, Fraunces, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,32 +8,40 @@ const inter = Inter({
   display: "swap",
 });
 
-const sora = Sora({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-sora",
+  variable: "--font-fraunces",
+  display: "swap",
+  axes: ["opsz", "SOFT", "WONK"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Yusuf Adesina   Frontend & Fullstack Developer · Lagos",
+  title: "Yusuf Adesina — Software Engineer, Frontend → Backend",
   description:
-    "Frontend and fullstack developer with 2+ years building production web and mobile apps. React, Next.js 14, TypeScript, React Native. Based in Lagos, Nigeria. ISC2 CC certified.",
+    "Frontend-rooted software engineer based in Lagos, Nigeria, building toward full-stack and backend engineering. React, Next.js, TypeScript on the front; Node.js, PostgreSQL, and systems fundamentals underneath. ISC2 CC certified.",
   keywords: [
     "Yusuf Adesina",
     "Frontend Developer",
+    "Backend Developer",
     "Fullstack Developer",
-    "React Native",
+    "Software Engineer",
+    "React",
     "Next.js",
     "TypeScript",
+    "Node.js",
     "Lagos",
     "Nigeria",
-    "IT Support",
-    "Software Engineer",
   ],
   openGraph: {
-    title: "Yusuf Adesina   Frontend & Fullstack Developer",
+    title: "Yusuf Adesina — Software Engineer, Frontend → Backend",
     description:
-      "Building production-grade web and mobile apps from Lagos. React, Next.js, TypeScript, Node.js.",
+      "Frontend-rooted, building toward backend. React, Next.js, TypeScript, Node.js, PostgreSQL. Based in Lagos, Nigeria.",
     type: "website",
   },
 };
@@ -42,8 +50,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${sora.variable}`}>
-      <body className="bg-navy-900 text-white font-inter antialiased">
+    <html
+      lang="en"
+      className={`${inter.variable} ${fraunces.variable} ${jetbrainsMono.variable}`}
+    >
+      <body className="bg-paper text-ink font-inter antialiased">
         {children}
       </body>
     </html>
