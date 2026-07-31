@@ -7,7 +7,7 @@ const timeline = [
     year: "Jun 2025 – May 2026",
     role: "IT Support Officer (NYSC)",
     org: "UAC Foods Dairies Plant",
-    desc: "Managing corporate IT infrastructure at a large-scale manufacturing plant — troubleshooting hardware/software issues, supporting Microsoft 365 environments, and maintaining network uptime for daily operations.",
+    desc: "Managing corporate IT infrastructure at a large-scale manufacturing plant , troubleshooting hardware/software issues, supporting Microsoft 365 environments, and maintaining network uptime for daily operations.",
   },
   {
     year: "Nov 2025 – Present",
@@ -19,13 +19,13 @@ const timeline = [
     year: "2023 – Present",
     role: "Freelance Frontend Developer",
     org: "Self-employed · Lagos",
-    desc: "Delivered full websites and web apps for clients across various industries — from real estate to children's events. Handling everything from UI design to deployment and email integrations.",
+    desc: "Delivered full websites and web apps for clients across various industries , from real estate to children's events. Handling everything from UI design to deployment and email integrations.",
   },
   {
     year: "2016 – 2017",
     role: "IT Support Technician",
     org: "Simpleboss Communication · Ikeja",
-    desc: "Early-career IT support role — handling hardware repairs, network setup, and frontline technical support. Sparked my interest in both systems and software.",
+    desc: "Early-career IT support role , handling hardware repairs, network setup, and frontline technical support. Sparked my interest in both systems and software.",
   },
 ];
 
@@ -44,12 +44,12 @@ export default function About() {
             I&apos;ve spent 2+ years building production-grade web and mobile
             applications while managing corporate IT infrastructure. I know
             what it means for software to actually work under real
-            conditions — not just on a demo machine.
+            conditions , not just on a demo machine.
           </p>
           <p>
             My stack spans React, Next.js 14, TypeScript, and React Native on
-            the frontend. I&apos;m now investing deliberately in the backend —
-            Node.js, PostgreSQL, Prisma ORM — so I can own a feature from
+            the frontend. I&apos;m now investing deliberately in the backend ,
+            Node.js, PostgreSQL, Prisma ORM , so I can own a feature from
             database to browser, not just the last mile of it.
           </p>
           <p>

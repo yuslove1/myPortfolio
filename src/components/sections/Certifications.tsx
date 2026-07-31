@@ -17,7 +17,7 @@ const certs = [
     status: "in-progress",
     year: "In Progress",
     description:
-      "Managing identity infrastructure in Azure AD — authentication flows, conditional access policies, and privileged identity management.",
+      "Managing identity infrastructure in Azure AD , authentication flows, conditional access policies, and privileged identity management.",
     icon: KeyRound,
   },
   {
@@ -44,12 +44,12 @@ const education = [
   {
     degree: "BSc(Ed) Computer Science",
     school: "Nigeria",
-    note: "Academic CS foundations — algorithms, data structures, and software engineering principles",
+    note: "Academic CS foundations , algorithms, data structures, and software engineering principles",
   },
   {
     degree: "National Diploma, Computer Engineering",
     school: "Nigeria",
-    note: "Hardware, electronics, networking, and systems — the physical layer of computing",
+    note: "Hardware, electronics, networking, and systems , the physical layer of computing",
   },
 ];
 

@@ -50,7 +50,7 @@ export default function Contact() {
         </h2>
         <p className="text-ink-500 leading-relaxed font-inter mb-8">
           Whether you&apos;re looking for a frontend developer, need IT
-          support, or have a project idea — I&apos;m open to conversations
+          support, or have a project idea , I&apos;m open to conversations
           that lead somewhere real. Based in Lagos but happy to work
           remotely.
         </p>

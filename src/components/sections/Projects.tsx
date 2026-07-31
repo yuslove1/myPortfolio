@@ -49,7 +49,7 @@ const projects = [
     title: "Ona",
     tagline: "AI-powered Lagos transit navigator",
     description:
-      "A navigation app built for Lagos commuters — AI-powered route suggestions, fare estimates, and commuter tips using Leaflet.js and Openrouteservice API. Designed for the chaotic, real-world conditions of Lagos transport.",
+      "A navigation app built for Lagos commuters , AI-powered route suggestions, fare estimates, and commuter tips using Leaflet.js and Openrouteservice API. Designed for the chaotic, real-world conditions of Lagos transport.",
     stack: ["Next.js", "Tailwind CSS", "Leaflet.js", "Openrouteservice API"],
     status: "In Progress",
     links: { github: "https://github.com/yuslove1", live: null },
@@ -100,7 +100,7 @@ export default function Projects() {
         </h2>
         <p className="text-ink-500 mt-3 font-inter leading-relaxed">
           A mix of client work, startup tools, and personal builds. Every
-          project here solved a real problem — for a real user.
+          project here solved a real problem , for a real user.
         </p>
       </Reveal>
 
@@ -173,7 +173,7 @@ export default function Projects() {
         </div>
       </Reveal>
 
-      {/* Other projects — list rows */}
+      {/* Other projects , list rows */}
       <h3 className="text-xs font-medium text-ink-300 uppercase tracking-widest font-mono mb-2">
         more projects
       </h3>

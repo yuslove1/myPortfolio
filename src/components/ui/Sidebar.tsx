@@ -69,7 +69,7 @@ export default function Sidebar() {
             Yusuf Adesina
           </a>
           <p className="text-rust-500 font-mono text-sm mb-6">
-            Software Engineer — Frontend → Backend
+            Software Engineer , Frontend → Backend
           </p>
           <p className="text-ink-500 text-sm leading-relaxed max-w-xs mb-10">
             Frontend-rooted developer based in Lagos, building toward

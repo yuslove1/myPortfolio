@@ -22,7 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yusuf Adesina — Software Engineer, Frontend → Backend",
+  title: "Yusuf Adesina , Software Engineer, Frontend → Backend",
   description:
     "Frontend-rooted software engineer based in Lagos, Nigeria, building toward full-stack and backend engineering. React, Next.js, TypeScript on the front; Node.js, PostgreSQL, and systems fundamentals underneath. ISC2 CC certified.",
   keywords: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "Nigeria",
   ],
   openGraph: {
-    title: "Yusuf Adesina — Software Engineer, Frontend → Backend",
+    title: "Yusuf Adesina , Software Engineer, Frontend → Backend",
     description:
       "Frontend-rooted, building toward backend. React, Next.js, TypeScript, Node.js, PostgreSQL. Based in Lagos, Nigeria.",
     type: "website",

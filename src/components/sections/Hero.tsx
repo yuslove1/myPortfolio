@@ -33,7 +33,7 @@ export default function Hero() {
           </div>
 
           <h1 className="font-fraunces text-4xl sm:text-5xl font-medium leading-[1.12] tracking-tight mb-6 text-ink">
-            I build interfaces people trust — and I&apos;m going{" "}
+            I build interfaces people trust , and I&apos;m going{" "}
             <span className="italic text-rust-500">deeper</span> into the
             systems behind them.
           </h1>
@@ -42,7 +42,7 @@ export default function Hero() {
             I&apos;m <span className="text-ink font-medium">Yusuf Adesina</span>,
             a frontend-rooted software engineer and IT Support Officer based in{" "}
             <span className="text-ink font-medium">Lagos, Nigeria</span>,
-            currently deepening my backend and systems skills — React and
+            currently deepening my backend and systems skills , React and
             Next.js on the surface, Node.js and PostgreSQL underneath.
           </p>
 

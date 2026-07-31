@@ -1,4 +1,4 @@
-# Yusuf Adesina — Portfolio
+# Yusuf Adesina , Portfolio
 
 A warm, editorial-style developer portfolio built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. Designed to showcase projects, skills, certifications, and professional experience with a clean, content-first UI.
 
@@ -9,7 +9,7 @@ A warm, editorial-style developer portfolio built with **Next.js 14**, **TypeScr
 ## ✨ Features
 
 - **Single-page layout** with smooth scroll navigation and Framer Motion scroll-reveal animations
-- **Responsive design** — fully optimized for mobile, tablet, and desktop
+- **Responsive design** , fully optimized for mobile, tablet, and desktop
 - **Editorial-light theme** with a warm paper/ink palette, Fraunces serif headings, and monospace accents
 - **Backdrop-blurred navbar** that appears on scroll
 - **Categorized skill tags** organized by category (Frontend, Backend & Data, Tools, IT & Security), marking core vs. actively-growing skills
@@ -134,8 +134,8 @@ The portfolio uses a warm, editorial-light design system defined through Tailwin
 
 This is a standard Next.js app that can be deployed to:
 
-- [**Vercel**](https://vercel.com) (recommended) — zero-config deployment for Next.js
-- [**Netlify**](https://netlify.com) — with the Next.js adapter
+- [**Vercel**](https://vercel.com) (recommended) , zero-config deployment for Next.js
+- [**Netlify**](https://netlify.com) , with the Next.js adapter
 - Any Node.js hosting that supports `npm run build` and `npm start`
 
 ---
