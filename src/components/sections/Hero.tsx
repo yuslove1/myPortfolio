@@ -1,88 +1,82 @@
+"use client";
+import { motion } from "framer-motion";
+import { ArrowUpRight, Circle } from "lucide-react";
+
+const stats = [
+  { value: "2+", label: "Years building products" },
+  { value: "6+", label: "Projects shipped" },
+  { value: "ISC2 CC", label: "Security certified" },
+  { value: "Lagos", label: "Based in Nigeria" },
+];
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center trust-grid overflow-hidden">
-      {/* Ambient glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-electric-500/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-amber-400/5 rounded-full blur-3xl pointer-events-none" />
+    <section className="relative min-h-[92vh] flex items-center overflow-hidden grain">
+      <span
+        aria-hidden="true"
+        className="font-fraunces italic pointer-events-none select-none absolute -top-10 right-[4%] text-[13rem] leading-none text-ink/[0.04]"
+      >
+        01
+      </span>
 
-      <div className="relative max-w-6xl mx-auto px-6 pt-28 pb-20">
-        <div className="max-w-3xl">
-          {/* Status badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-electric-500/30 bg-electric-500/10 mb-8">
-            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-            <span className="text-xs font-medium text-electric-300 font-inter">
-              Open to new opportunities
+      <div className="relative px-6 sm:px-12 lg:px-16 py-24 w-full max-w-2xl">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-moss-600/25 bg-moss-100 mb-8">
+            <Circle size={7} className="fill-moss-600 text-moss-600 animate-pulse" />
+            <span className="text-xs font-medium text-moss-600 font-mono tracking-tight">
+              open to new opportunities
             </span>
           </div>
 
-          {/* Headline */}
-          <h1 className="font-sora text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.08] tracking-tight mb-6">
-            Building things
-            <br />
-            that <span className="gradient-text">actually work.</span>
-            <br />
+          <h1 className="font-fraunces text-4xl sm:text-5xl font-medium leading-[1.12] tracking-tight mb-6 text-ink">
+            I build interfaces people trust — and I&apos;m going{" "}
+            <span className="italic text-rust-500">deeper</span> into the
+            systems behind them.
           </h1>
 
-          {/* Sub-copy */}
-          <p className="text-white/60 text-lg sm:text-xl leading-relaxed mb-10 max-w-2xl font-inter">
-            I&apos;m <span className="text-white font-medium">Yusuf Adesina</span>   frontend &
-            fullstack developer and IT Support Officer based in{" "}
-            <span className="text-amber-400 font-medium">Lagos, Nigeria</span>.
-            I build clean, production-grade web and mobile products that solve real problems.
+          <p className="text-ink-500 text-lg leading-relaxed mb-10 font-inter">
+            I&apos;m <span className="text-ink font-medium">Yusuf Adesina</span>,
+            a frontend-rooted software engineer and IT Support Officer based in{" "}
+            <span className="text-ink font-medium">Lagos, Nigeria</span>,
+            currently deepening my backend and systems skills — React and
+            Next.js on the surface, Node.js and PostgreSQL underneath.
           </p>
 
-          {/* CTAs */}
           <div className="flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-electric-500 hover:bg-electric-400 text-white font-medium transition-all duration-200 glow-blue"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-ink hover:bg-rust-500 text-paper font-medium font-inter transition-colors duration-200"
             >
               View My Work
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="M3 8h10M9 4l4 4-4 4"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <ArrowUpRight size={16} />
             </a>
             <a
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/15 hover:border-white/30 text-white/80 hover:text-white font-medium transition-all duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-ink/20 hover:border-ink text-ink font-medium font-inter transition-colors duration-200"
             >
-              Download CV
+              Download Résumé
             </a>
           </div>
 
-          {/* Quick stats */}
-          <div className="mt-16 flex flex-wrap gap-8 pt-8 border-t border-white/8">
-            {[
-              { value: "2+", label: "Years building products" },
-              { value: "6+", label: "Projects shipped" },
-              { value: "ISC2 CC", label: "Security certified" },
-              { value: "Lagos", label: "Based in Nigeria" },
-            ].map((stat) => (
+          <div className="mt-16 flex flex-wrap gap-8 pt-8 border-t border-ink/10">
+            {stats.map((stat) => (
               <div key={stat.label}>
-                <div className="font-sora font-bold text-2xl text-white">
+                <div className="font-mono font-semibold text-xl text-ink">
                   {stat.value}
                 </div>
-                <div className="text-xs text-white/40 font-inter mt-0.5">
+                <div className="text-xs text-ink-500 font-inter mt-1">
                   {stat.label}
                 </div>
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
