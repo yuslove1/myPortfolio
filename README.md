@@ -1,6 +1,6 @@
 # Yusuf Adesina — Portfolio
 
-A modern, dark-themed developer portfolio built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. Designed to showcase projects, skills, certifications, and professional experience with a clean, production-grade UI.
+A warm, editorial-style developer portfolio built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. Designed to showcase projects, skills, certifications, and professional experience with a clean, content-first UI.
 
 🔗 **Live:** [Coming Soon](#) &nbsp;|&nbsp; 📧 **Email:** adesinayusuf0@gmail.com &nbsp;|&nbsp; 💼 **LinkedIn:** [yusufadesina](https://linkedin.com/in/yusufadesina)
 
@@ -8,16 +8,16 @@ A modern, dark-themed developer portfolio built with **Next.js 14**, **TypeScrip
 
 ## ✨ Features
 
-- **Single-page layout** with smooth scroll navigation and scroll-reveal animations
+- **Single-page layout** with smooth scroll navigation and Framer Motion scroll-reveal animations
 - **Responsive design** — fully optimized for mobile, tablet, and desktop
-- **Dark theme** with a custom navy/electric-blue color palette
-- **Glassmorphism navbar** with backdrop blur on scroll
-- **Interactive skill bars** organized by category (Frontend, Backend, Tools, IT & Security)
+- **Editorial-light theme** with a warm paper/ink palette, Fraunces serif headings, and monospace accents
+- **Backdrop-blurred navbar** that appears on scroll
+- **Categorized skill tags** organized by category (Frontend, Backend & Data, Tools, IT & Security), marking core vs. actively-growing skills
 - **Featured project showcase** with highlights, tech stack badges, and live/GitHub links
 - **Experience timeline** with color-coded role indicators
 - **Certifications & education** section with status badges (Certified / In Progress)
 - **Contact form** with email, LinkedIn, and GitHub links
-- **Custom scrollbar**, glow effects, and card hover animations
+- **Custom scrollbar**, subtle paper-grain texture, and card hover lift
 - **SEO optimized** with Open Graph meta tags, semantic HTML, and descriptive metadata
 
 ---
@@ -53,7 +53,7 @@ portfolio/
 │   │   │   ├── Certifications.tsx # Certs and education cards
 │   │   │   └── Contact.tsx        # Contact form and direct links
 │   │   └── ui/
-│   │       ├── Navbar.tsx         # Fixed navbar with mobile hamburger menu
+│   │       ├── Sidebar.tsx        # Fixed left sidebar nav (desktop) + mobile top bar
 │   │       └── Footer.tsx         # Site footer
 │   └── lib/
 │       └── useScrollReveal.ts # Intersection Observer hook for scroll animations
@@ -99,17 +99,21 @@ npm start
 
 ## 🎨 Design System
 
-The portfolio uses a custom design system defined through Tailwind config and CSS custom properties:
+The portfolio uses a warm, editorial-light design system defined through Tailwind config and CSS custom properties:
 
-| Token             | Value       | Usage                       |
-| ----------------- | ----------- | --------------------------- |
-| `navy-950`        | `#060d1a`   | Page background             |
-| `navy-900`        | `#0b1426`   | Section alternate background|
-| `navy-800`        | `#111e35`   | Card backgrounds            |
-| `electric-500`    | `#2563eb`   | Primary accent / CTAs       |
-| `amber-400`       | `#f59e0b`   | Secondary accent / highlights|
+| Token             | Value       | Usage                              |
+| ----------------- | ----------- | ----------------------------------- |
+| `paper`           | `#faf6ef`   | Page background                     |
+| `paper-100`       | `#f5efe3`   | Section alternate background        |
+| `ink`             | `#1c1b19`   | Primary text                        |
+| `ink-500`         | `#6e675c`   | Muted text                          |
+| `rust-500`        | `#b8481e`   | Primary accent / CTAs               |
+| `moss-600`        | `#2f6f52`   | Success / "live" status accent      |
+| `amber-500`       | `#b8860b`   | "In progress" status accent         |
 
-**Typography:** Sora (headings) · Inter (body text)
+**Typography:** Fraunces (display serif headings) · Inter (body text) · JetBrains Mono (labels, tags, dates)
+
+**Icons:** [lucide-react](https://lucide.dev) · **Motion:** [Framer Motion](https://www.framer.com/motion/) for scroll reveals
 
 ---
 
@@ -119,7 +123,7 @@ The portfolio uses a custom design system defined through Tailwind config and CS
 | ---------------- | ----------------------------------------------------------------- |
 | **Hero**         | Headline, tagline, CTAs (View Work / Download CV), and quick stats|
 | **About**        | Professional bio with experience timeline                         |
-| **Skills**       | Categorized skill bars + tech stack badges                         |
+| **Skills**       | Categorized skill tags (core vs. actively growing)                 |
 | **Projects**     | Featured project card + project grid with live/GitHub links        |
 | **Certifications** | ISC2 CC, SC-300, ALX certifications + education background      |
 | **Contact**      | Contact form + direct email, LinkedIn, and GitHub links            |
