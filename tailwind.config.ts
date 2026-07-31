@@ -9,25 +9,40 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: {
-          950: "#060D1A",
-          900: "#0B1426",
-          800: "#111E35",
-          700: "#172644",
+        paper: {
+          DEFAULT: "#FAF6EF",
+          50: "#FFFFFF",
+          100: "#F5EFE3",
+          200: "#EDE3D0",
         },
-        electric: {
-          500: "#2563EB",
-          400: "#3B82F6",
-          300: "#60A5FA",
+        ink: {
+          DEFAULT: "#1C1B19",
+          700: "#3A362F",
+          500: "#6E675C",
+          300: "#A79F8E",
+          200: "#D8D1C2",
+        },
+        rust: {
+          600: "#A63D14",
+          500: "#B8481E",
+          400: "#D97B4F",
+          100: "#F4E1D3",
+        },
+        moss: {
+          600: "#2F6F52",
+          500: "#3B8563",
+          100: "#DCEBE1",
         },
         amber: {
-          400: "#F59E0B",
-          300: "#FCD34D",
+          500: "#B8860B",
+          400: "#C99A2E",
+          100: "#F3E7C9",
         },
       },
       fontFamily: {
-        sora: ["Sora", "sans-serif"],
-        inter: ["Inter", "sans-serif"],
+        fraunces: ["var(--font-fraunces)", "serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
+        mono: ["var(--font-mono)", "monospace"],
       },
       animation: {
         "fade-up": "fadeUp 0.6s ease-out forwards",

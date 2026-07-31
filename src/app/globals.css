@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --navy-950: #060d1a;
-  --navy-900: #0b1426;
-  --navy-800: #111e35;
-  --electric: #2563eb;
-  --amber: #f59e0b;
+  --paper: #faf6ef;
+  --ink: #1c1b19;
+  --rust: #b8481e;
+  --moss: #2f6f52;
 }
 
 html {
@@ -23,65 +22,59 @@ html {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--navy-900);
+  background: var(--paper);
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e3a5f;
+  background: #d8d1c2;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--electric);
+  background: var(--rust);
 }
 
-/* Trust grid background pattern */
-.trust-grid {
-  background-image:
-    linear-gradient(rgba(37, 99, 235, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(37, 99, 235, 0.07) 1px, transparent 1px);
-  background-size: 48px 48px;
+/* Subtle paper grain, applied over solid/cream backgrounds only */
+.grain {
+  position: relative;
+}
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
 }
 
-/* Gradient text utility */
-.gradient-text {
-  background: linear-gradient(135deg, #60a5fa 0%, #f59e0b 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Underline-on-hover link, used across the site instead of glow effects */
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.25s ease;
 }
-
-/* Section fade-up animation */
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Glow effect */
-.glow-blue {
-  box-shadow: 0 0 24px rgba(37, 99, 235, 0.25);
-}
-.glow-blue:hover {
-  box-shadow: 0 0 36px rgba(37, 99, 235, 0.4);
+.link-underline:hover {
+  background-size: 100% 1px;
 }
 
 /* Card hover lift */
 .card-lift {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 .card-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px -12px rgba(28, 27, 25, 0.12);
 }
 
 @layer utilities {
-  .font-sora {
-    font-family: var(--font-sora), sans-serif;
+  .font-fraunces {
+    font-family: var(--font-fraunces), serif;
   }
   .font-inter {
     font-family: var(--font-inter), sans-serif;
+  }
+  .font-mono {
+    font-family: var(--font-mono), monospace;
   }
 }
