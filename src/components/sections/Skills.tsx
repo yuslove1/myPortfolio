@@ -51,7 +51,7 @@ function SkillPill({ name, level }: { name: string; level: string }) {
   const growing = level === "growing";
   return (
     <span
-      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-inter mr-2 mb-2 ${
+      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-sans mr-2 mb-2 ${
         growing
           ? "border border-dashed border-ink/20 text-ink-500"
           : "bg-ink/[0.04] border border-ink/8 text-ink-700"
@@ -70,10 +70,10 @@ export default function Skills() {
         <p className="text-rust-500 text-sm font-medium tracking-widest uppercase font-mono mb-4">
           // skills
         </p>
-        <h2 className="font-fraunces text-3xl font-medium text-ink">
+        <h2 className="font-serif text-3xl font-medium text-ink">
           What I bring to the table
         </h2>
-        <p className="text-ink-500 mt-3 font-inter leading-relaxed">
+        <p className="text-ink-500 mt-3 font-sans leading-relaxed">
           Frontend-first, but deliberately building toward full-stack. Solid
           tags below are where I&apos;m confident today; dashed tags mark
           what I&apos;m actively deepening right now.
@@ -86,7 +86,7 @@ export default function Skills() {
             <div className="py-6 grid sm:grid-cols-[10rem_1fr] gap-x-6 gap-y-3">
               <div className="flex items-center gap-2.5 text-ink">
                 <group.icon size={15} className="text-rust-500" />
-                <h3 className="font-fraunces font-medium text-sm">
+                <h3 className="font-serif font-medium text-sm">
                   {group.category}
                 </h3>
               </div>

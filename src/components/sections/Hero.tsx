@@ -14,7 +14,7 @@ export default function Hero() {
     <section className="relative min-h-[92vh] flex items-center overflow-hidden grain">
       <span
         aria-hidden="true"
-        className="font-fraunces italic pointer-events-none select-none absolute -top-10 right-[4%] text-[13rem] leading-none text-ink/[0.04]"
+        className="font-serif italic pointer-events-none select-none absolute -top-10 right-[4%] text-[13rem] leading-none text-ink/[0.04]"
       >
         01
       </span>
@@ -32,13 +32,13 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="font-fraunces text-4xl sm:text-5xl font-medium leading-[1.12] tracking-tight mb-6 text-ink">
+          <h1 className="font-serif text-4xl sm:text-5xl font-medium leading-[1.12] tracking-tight mb-6 text-ink">
             I build interfaces people trust , and I&apos;m going{" "}
             <span className="italic text-rust-500">deeper</span> into the
             systems behind them.
           </h1>
 
-          <p className="text-ink-500 text-lg leading-relaxed mb-10 font-inter">
+          <p className="text-ink-500 text-lg leading-relaxed mb-10 font-sans">
             I&apos;m <span className="text-ink font-medium">Yusuf Adesina</span>,
             a frontend-rooted software engineer and IT Support Officer based in{" "}
             <span className="text-ink font-medium">Lagos, Nigeria</span>,
@@ -49,7 +49,7 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-ink hover:bg-rust-500 text-paper font-medium font-inter transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-ink hover:bg-rust-500 text-paper font-medium font-sans transition-colors duration-200"
             >
               View My Work
               <ArrowUpRight size={16} />
@@ -58,7 +58,7 @@ export default function Hero() {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-ink/20 hover:border-ink text-ink font-medium font-inter transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-ink/20 hover:border-ink text-ink font-medium font-sans transition-colors duration-200"
             >
               Download Résumé
             </a>
@@ -70,7 +70,7 @@ export default function Hero() {
                 <div className="font-mono font-semibold text-xl text-ink">
                   {stat.value}
                 </div>
-                <div className="text-xs text-ink-500 font-inter mt-1">
+                <div className="text-xs text-ink-500 font-sans mt-1">
                   {stat.label}
                 </div>
               </div>

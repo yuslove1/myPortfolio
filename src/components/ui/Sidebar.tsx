@@ -21,7 +21,7 @@ export default function Sidebar() {
       {/* Mobile top bar */}
       <header className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-paper/90 backdrop-blur-md border-b border-ink/8">
         <div className="flex items-center justify-between px-6 py-4">
-          <a href="#" className="font-fraunces text-lg font-medium text-ink">
+          <a href="#" className="font-serif text-lg font-medium text-ink">
             Yusuf Adesina
           </a>
           <button
@@ -39,7 +39,7 @@ export default function Sidebar() {
                 <li key={link.id}>
                   <a
                     href={`#${link.id}`}
-                    className="text-ink/70 hover:text-ink text-sm font-inter"
+                    className="text-ink/70 hover:text-ink text-sm font-sans"
                     onClick={() => setMenuOpen(false)}
                   >
                     {link.label}
@@ -65,7 +65,7 @@ export default function Sidebar() {
       {/* Desktop fixed sidebar */}
       <aside className="hidden lg:flex lg:flex-col lg:justify-between lg:fixed lg:inset-y-0 lg:left-0 lg:w-80 xl:w-[22rem] px-12 py-16">
         <div>
-          <a href="#" className="font-fraunces text-2xl font-medium text-ink block mb-2">
+          <a href="#" className="font-serif text-2xl font-medium text-ink block mb-2">
             Yusuf Adesina
           </a>
           <p className="text-rust-500 font-mono text-sm mb-6">
@@ -108,7 +108,7 @@ export default function Sidebar() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mb-6 text-sm font-medium text-ink border-b border-ink/30 hover:border-ink pb-0.5 font-inter transition-colors"
+            className="inline-block mb-6 text-sm font-medium text-ink border-b border-ink/30 hover:border-ink pb-0.5 font-sans transition-colors"
           >
             Download Résumé
           </a>

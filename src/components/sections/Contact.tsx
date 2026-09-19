@@ -45,10 +45,10 @@ export default function Contact() {
         <p className="text-rust-500 text-sm font-medium tracking-widest uppercase font-mono mb-4">
           // contact
         </p>
-        <h2 className="font-fraunces text-3xl font-medium text-ink mb-6">
+        <h2 className="font-serif text-3xl font-medium text-ink mb-6">
           Let&apos;s build something worth using.
         </h2>
-        <p className="text-ink-500 leading-relaxed font-inter mb-8">
+        <p className="text-ink-500 leading-relaxed font-sans mb-8">
           Whether you&apos;re looking for a frontend developer, need IT
           support, or have a project idea , I&apos;m open to conversations
           that lead somewhere real. Based in Lagos but happy to work
@@ -62,7 +62,7 @@ export default function Contact() {
               href={contact.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-ink/12 hover:border-rust-500/40 text-ink-700 hover:text-ink text-sm font-inter transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-ink/12 hover:border-rust-500/40 text-ink-700 hover:text-ink text-sm font-sans transition-colors"
             >
               <contact.icon size={14} className="text-rust-500" />
               {contact.value}
@@ -77,10 +77,10 @@ export default function Contact() {
             <div className="w-14 h-14 rounded-full bg-moss-100 border border-moss-600/20 flex items-center justify-center mb-5 text-moss-600">
               <Check size={22} />
             </div>
-            <h3 className="font-fraunces text-xl font-medium text-ink mb-2">
+            <h3 className="font-serif text-xl font-medium text-ink mb-2">
               Message sent
             </h3>
-            <p className="text-ink-500 font-inter text-sm">
+            <p className="text-ink-500 font-sans text-sm">
               I&apos;ll get back to you within 24 hours.
             </p>
           </div>
@@ -98,7 +98,7 @@ export default function Contact() {
                   setForm((f) => ({ ...f, name: e.target.value }))
                 }
                 placeholder="Your name"
-                className="w-full px-4 py-3 rounded-xl bg-white border border-ink/12 text-ink placeholder-ink/30 font-inter text-sm focus:outline-none focus:border-rust-500/50 transition-colors"
+                className="w-full px-4 py-3 rounded-xl bg-white border border-ink/12 text-ink placeholder-ink/30 font-sans text-sm focus:outline-none focus:border-rust-500/50 transition-colors"
               />
             </div>
             <div>
@@ -113,7 +113,7 @@ export default function Contact() {
                   setForm((f) => ({ ...f, email: e.target.value }))
                 }
                 placeholder="your@email.com"
-                className="w-full px-4 py-3 rounded-xl bg-white border border-ink/12 text-ink placeholder-ink/30 font-inter text-sm focus:outline-none focus:border-rust-500/50 transition-colors"
+                className="w-full px-4 py-3 rounded-xl bg-white border border-ink/12 text-ink placeholder-ink/30 font-sans text-sm focus:outline-none focus:border-rust-500/50 transition-colors"
               />
             </div>
             <div>
@@ -128,17 +128,17 @@ export default function Contact() {
                   setForm((f) => ({ ...f, message: e.target.value }))
                 }
                 placeholder="What are you working on? What do you need?"
-                className="w-full px-4 py-3 rounded-xl bg-white border border-ink/12 text-ink placeholder-ink/30 font-inter text-sm focus:outline-none focus:border-rust-500/50 transition-colors resize-none"
+                className="w-full px-4 py-3 rounded-xl bg-white border border-ink/12 text-ink placeholder-ink/30 font-sans text-sm focus:outline-none focus:border-rust-500/50 transition-colors resize-none"
               />
             </div>
             <button
               type="submit"
               disabled={status === "sending"}
-              className="px-6 py-3 rounded-xl bg-ink hover:bg-rust-500 disabled:opacity-60 text-paper font-medium font-inter transition-colors"
+              className="px-6 py-3 rounded-xl bg-ink hover:bg-rust-500 disabled:opacity-60 text-paper font-medium font-sans transition-colors"
             >
               {status === "sending" ? "Sending…" : "Send Message"}
             </button>
-            <p className="text-xs text-ink-300 font-inter">
+            <p className="text-xs text-ink-300 font-sans">
               Or reach out directly on LinkedIn for a faster response
             </p>
           </form>

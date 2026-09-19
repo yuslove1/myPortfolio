@@ -40,8 +40,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        fraunces: ["var(--font-fraunces)", "serif"],
-        inter: ["var(--font-inter)", "sans-serif"],
+        sans: ["var(--font-sans)", "sans-serif"],
+        serif: ["var(--font-serif)", "serif"],
         mono: ["var(--font-mono)", "monospace"],
       },
       animation: {

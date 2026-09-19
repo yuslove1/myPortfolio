@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces, JetBrains_Mono } from "next/font/google";
+import { Public_Sans, Newsreader, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const publicSans = Public_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-sans",
   display: "swap",
 });
 
-const fraunces = Fraunces({
+const newsreader = Newsreader({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  variable: "--font-serif",
   display: "swap",
-  axes: ["opsz", "SOFT", "WONK"],
+  axes: ["opsz"],
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -52,9 +52,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${fraunces.variable} ${jetbrainsMono.variable}`}
+      className={`${publicSans.variable} ${newsreader.variable} ${jetbrainsMono.variable}`}
     >
-      <body className="bg-paper text-ink font-inter antialiased">
+      <body className="bg-paper text-ink font-sans antialiased">
         {children}
       </body>
     </html>

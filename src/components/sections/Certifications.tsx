@@ -66,10 +66,10 @@ export default function Certifications() {
         <p className="text-rust-500 text-sm font-medium tracking-widest uppercase font-mono mb-4">
           // credentials
         </p>
-        <h2 className="font-fraunces text-3xl font-medium text-ink">
+        <h2 className="font-serif text-3xl font-medium text-ink">
           Certifications & Education
         </h2>
-        <p className="text-ink-500 mt-3 font-inter leading-relaxed">
+        <p className="text-ink-500 mt-3 font-sans leading-relaxed">
           Structured learning that shapes how I think about security,
           architecture, and building reliable software.
         </p>
@@ -96,13 +96,13 @@ export default function Certifications() {
                     {cert.year}
                   </span>
                 </div>
-                <h3 className="font-fraunces font-medium text-ink text-base mb-1 leading-snug">
+                <h3 className="font-serif font-medium text-ink text-base mb-1 leading-snug">
                   {cert.name}
                 </h3>
                 <p className="text-rust-500 text-xs font-mono mb-2">
                   {cert.issuer}
                 </p>
-                <p className="text-ink-500 text-sm font-inter leading-relaxed">
+                <p className="text-ink-500 text-sm font-sans leading-relaxed">
                   {cert.description}
                 </p>
               </div>
@@ -123,10 +123,10 @@ export default function Certifications() {
                   <GraduationCap size={16} />
                 </div>
                 <div>
-                  <h4 className="font-fraunces font-medium text-ink text-sm">
+                  <h4 className="font-serif font-medium text-ink text-sm">
                     {edu.degree}
                   </h4>
-                  <p className="text-ink-500 text-xs font-inter mt-0.5">
+                  <p className="text-ink-500 text-xs font-sans mt-0.5">
                     {edu.note}
                   </p>
                 </div>

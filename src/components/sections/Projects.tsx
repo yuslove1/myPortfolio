@@ -95,10 +95,10 @@ export default function Projects() {
         <p className="text-rust-500 text-sm font-medium tracking-widest uppercase font-mono mb-4">
           // projects
         </p>
-        <h2 className="font-fraunces text-3xl font-medium text-ink">
+        <h2 className="font-serif text-3xl font-medium text-ink">
           Shipped, not just started
         </h2>
-        <p className="text-ink-500 mt-3 font-inter leading-relaxed">
+        <p className="text-ink-500 mt-3 font-sans leading-relaxed">
           A mix of client work, startup tools, and personal builds. Every
           project here solved a real problem , for a real user.
         </p>
@@ -119,20 +119,20 @@ export default function Projects() {
               {featured.status}
             </span>
           </div>
-          <h3 className="font-fraunces text-2xl font-medium text-ink mb-1">
+          <h3 className="font-serif text-2xl font-medium text-ink mb-1">
             {featured.title}
           </h3>
-          <p className="text-rust-500 font-medium mb-4 font-inter text-sm">
+          <p className="text-rust-500 font-medium mb-4 font-sans text-sm">
             {featured.tagline}
           </p>
-          <p className="text-ink-500 leading-relaxed font-inter mb-5 text-sm">
+          <p className="text-ink-500 leading-relaxed font-sans mb-5 text-sm">
             {featured.description}
           </p>
           <ul className="space-y-2 mb-6">
             {(featured.highlights ?? []).map((h, i) => (
               <li key={i} className="flex items-start gap-3">
                 <span className="mt-1.5 w-1 h-1 rounded-full bg-rust-500 flex-shrink-0" />
-                <span className="text-sm text-ink-500 font-inter leading-relaxed">
+                <span className="text-sm text-ink-500 font-sans leading-relaxed">
                   {h}
                 </span>
               </li>
@@ -154,7 +154,7 @@ export default function Projects() {
                 href={featured.links.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link-underline inline-flex items-center gap-1.5 text-sm text-ink hover:text-rust-500 font-inter font-medium"
+                className="link-underline inline-flex items-center gap-1.5 text-sm text-ink hover:text-rust-500 font-sans font-medium"
               >
                 View Live Site <ArrowUpRight size={14} />
               </a>
@@ -164,7 +164,7 @@ export default function Projects() {
                 href={featured.links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link-underline inline-flex items-center gap-1.5 text-sm text-ink-500 hover:text-ink font-inter"
+                className="link-underline inline-flex items-center gap-1.5 text-sm text-ink-500 hover:text-ink font-sans"
               >
                 <GithubIcon size={14} /> GitHub
               </a>
@@ -182,7 +182,7 @@ export default function Projects() {
           <Reveal key={project.title} delay={i * 0.04}>
             <div className="py-6">
               <div className="flex flex-wrap items-baseline justify-between gap-2 mb-1">
-                <h4 className="font-fraunces font-medium text-ink text-lg">
+                <h4 className="font-serif font-medium text-ink text-lg">
                   {project.title}
                 </h4>
                 <span
@@ -193,10 +193,10 @@ export default function Projects() {
                   {project.status}
                 </span>
               </div>
-              <p className="text-rust-500 text-sm font-inter mb-2">
+              <p className="text-rust-500 text-sm font-sans mb-2">
                 {project.tagline}
               </p>
-              <p className="text-ink-500 text-sm leading-relaxed font-inter mb-3">
+              <p className="text-ink-500 text-sm leading-relaxed font-sans mb-3">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-1.5 mb-3">
@@ -215,7 +215,7 @@ export default function Projects() {
                     href={project.links.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="link-underline inline-flex items-center gap-1 text-xs text-ink-500 hover:text-ink font-inter"
+                    className="link-underline inline-flex items-center gap-1 text-xs text-ink-500 hover:text-ink font-sans"
                   >
                     <GithubIcon size={12} /> GitHub
                   </a>
@@ -225,7 +225,7 @@ export default function Projects() {
                     href={project.links.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="link-underline inline-flex items-center gap-1 text-xs text-rust-500 hover:text-rust-600 font-inter"
+                    className="link-underline inline-flex items-center gap-1 text-xs text-rust-500 hover:text-rust-600 font-sans"
                   >
                     Live Site <ArrowUpRight size={12} />
                   </a>

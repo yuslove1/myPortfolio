@@ -36,10 +36,10 @@ export default function About() {
         <p className="text-rust-500 text-sm font-medium tracking-widest uppercase font-mono mb-4">
           // about
         </p>
-        <h2 className="font-fraunces text-3xl font-medium text-ink mb-6 leading-tight">
+        <h2 className="font-serif text-3xl font-medium text-ink mb-6 leading-tight">
           Developer and IT professional who builds for the real world.
         </h2>
-        <div className="space-y-4 text-ink-500 font-inter leading-relaxed">
+        <div className="space-y-4 text-ink-500 font-sans leading-relaxed">
           <p>
             I&apos;ve spent 2+ years building production-grade web and mobile
             applications while managing corporate IT infrastructure. I know
@@ -63,7 +63,7 @@ export default function About() {
         <div className="mt-8 flex flex-wrap gap-3">
           <a
             href="mailto:adesinayusuf0@gmail.com"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-ink/12 text-ink-500 hover:text-ink hover:border-ink/30 text-sm font-inter transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-ink/12 text-ink-500 hover:text-ink hover:border-ink/30 text-sm font-sans transition-colors"
           >
             <Mail size={14} /> adesinayusuf0@gmail.com
           </a>
@@ -71,7 +71,7 @@ export default function About() {
             href="https://linkedin.com/in/yusufadesina"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-ink/12 text-ink-500 hover:text-ink hover:border-ink/30 text-sm font-inter transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-ink/12 text-ink-500 hover:text-ink hover:border-ink/30 text-sm font-sans transition-colors"
           >
             <LinkedinIcon size={14} /> LinkedIn
           </a>
@@ -79,7 +79,7 @@ export default function About() {
             href="https://github.com/yuslove1"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-ink/12 text-ink-500 hover:text-ink hover:border-ink/30 text-sm font-inter transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-ink/12 text-ink-500 hover:text-ink hover:border-ink/30 text-sm font-sans transition-colors"
           >
             <GithubIcon size={14} /> github.com/yuslove1
           </a>
@@ -98,13 +98,13 @@ export default function About() {
                   {item.year}
                 </span>
                 <div>
-                  <h4 className="font-fraunces font-medium text-ink text-lg">
+                  <h4 className="font-serif font-medium text-ink text-lg">
                     {item.role}
                   </h4>
                   <p className="text-rust-500 text-xs font-mono mb-2">
                     {item.org}
                   </p>
-                  <p className="text-ink-500 text-sm font-inter leading-relaxed">
+                  <p className="text-ink-500 text-sm font-sans leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
